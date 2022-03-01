@@ -101,7 +101,7 @@ if(simple_decimal < 5.0):
     print("Small decimal")
 elif(simple_decimal < 9.0):
     print("Mid size decimal")
-else:
+else: 
     print("Big decimal") 
 
 '''
@@ -164,19 +164,49 @@ for num in range(10):
 
 #TODO: Declare an Array with mixed data types. i.e. string, number, boolean, etc. 
 # Iterate through this list using for loop and see the output. 
+#String    
+    cars = ["Porsche", "Mercedes", "Rolls Royce"]
+    for x in cars:
+        print(x)
+    print(type(cars))
 
+ #Boolean 
+
+print (6>3)
+print (6 == 3)
+print (6<3)
+
+i = 6
+while i < 7:
+    print('This is while loop')
+    i = i+2
 
 
 #TODO: Print the data type for each array item. 
+print (type(cars))
+print(type(i))
 
 
 
 # TODO: Reverse a String: input = hello, output = olleh
+def reverse_for_loop(s):
+    s1 = ''
+    for c in s:
+        s1 = c + s1  # appending chars in reverse order
+    return s1
 
+input_str = 'Courtny'
+print(input_str)
+if __name__ == "__main__":
+    print(reverse_for_loop(input_str))
 
 
 # TODO: Reverse a number: input = 1234, output = 4321
-
+num = '623'
+reverse = ''
+for i in range(len(num), 0, -1):
+   reverse += num[i-1]
+print('The reverse number is =', reverse)
 
 
 '''
@@ -235,7 +265,9 @@ for index, fruit in enumerate(my_list):
 
 #TODO: Using a for loop update every item in the my_list list into dessert items
 # dessert = ["apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi"]
-
+my_list[0:5] = ["apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi"]
+for dessert in my_list:
+    print(dessert)
 
 
 print("-------------------- Dictionary ---------------------------------\n")
@@ -276,3 +308,14 @@ for key, value in country_capital_dict.items():
 #TODO: Create 5 lists of real life items and create 5 dictionaries. For example, 
 # for list, I would create a list for list of chores I need to do on weekends. i.e chores = ['laundry', 'pick-up mail', 'clean the apt']
 # for dictionary, I would have friends to phone number. friends = {'jose': '718-233-6464', 'ali': '646-232-2323'}
+chores = ['laundry','sweeping', 'dishes', 'clean the car']
+daily_schedule = ['wash face', 'brush teeth', 'eat breakfast', 'school run','gym']
+to_do = ['laundry', 'homework', 'meal prep']
+clothing_order= ['shirt', 'skirt', 'pants', 'purse']
+Cartoons = ["peppa",'spongebob','fancy nancy']
+
+school_contacts = {'Diggs': '251-327-9972', 'Dingle': "251-333-4455"}
+supplier_emails= {'Cathy': 'cathy@supplier.com', 'Courtny': 'info@orrasolutions.com', 'Account rep': 'account@receivables.com'}
+store_item_id= {'itm001': 'Shirts', 'itm002': 'pants', 'itm003': "skirts"}
+item_price= {'Shirts': '$4', "Pants": '$6', 'Skirts': "$10"}
+store_location= {'Alabama': 'Mobile', "Florida": "Orlando", 'Texas': 'Dallas'}
