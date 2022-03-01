@@ -9,7 +9,7 @@ Functions allow you to write code efficiently. When you need to perform an actio
 
 def zero_arg_function():
     print("Invoking zero arg function")
-print(zero_arg_function)
+zero_arg_functio
     
 
 
@@ -23,9 +23,15 @@ introduction_with_default_args()
 
 def zero_arg_function():
     print("Invoking zero arg function")
-print(zero_arg_function)
+zero_arg_function
 
 
-def introduction_with_default_args(first_name = "Courtny", last_name = "Robinson"):
-    print("Hi, my name is %s %s" % first_name, last_name)
-print(introduction_with_default_args (first_name= 'Courtny', last_name= 'Robinson'))
+def introduction_with_required_args(first_name, last_name):
+    print("Hi, my name is %s" % first_name, last_name)
+introduction_with_required_args('Courtny', 'Robinson')
+introduction_with_required_args('Harry', 'Houdini')
+
+
+def introduction_with_default_args (first_name, last_name = 'Robinson'):
+    print("Hi, my name is %s %s. Nice to meet you!\n" % (first_name, last_name))
+introduction_with_default_args('Courtny')
