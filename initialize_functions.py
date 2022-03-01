@@ -69,8 +69,27 @@ print("------------ End of Function Initialization ---------------------\n\n")
 
 #TODO: Write a function that returns true if the input string is a palindrome string.
 # Inpute type: String
-# Return type: Boolean 
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    else:
+        return s[0] == s[-1] and is_palindrome(s[1:-1])
 
+print (is_palindrome('11*11'))
+print (is_palindrome('12*12'))
+print(is_palindrome('13*13'))
+
+
+# Return type: Boolean 
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    else:
+        return s[0] == s[-1] and is_palindrome(s[1:-1])
+
+print (is_palindrome('Courtny'))
+print (is_palindrome('Zora'))
+print(is_palindrome('hannah'))
 
 '''
 Boolean values can represent the state of a program or a certain condition. For example, you can use variables such as game_active, can_edit, and polling_open, which take either a True or False value. When these values are True, certain code sections are enabled as the program runs.
